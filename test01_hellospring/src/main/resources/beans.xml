@@ -8,5 +8,6 @@
     id 自定义名称 唯一性
     class 类的全限定名称 不能是接口-->
     <bean id="someService" class="com.coco.service.impl.SomeserviceImpl"></bean>
+    <bean id="someService1" class="com.coco.service.impl.SomeserviceImpl"></bean>
 </beans>
 

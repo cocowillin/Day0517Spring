@@ -20,8 +20,10 @@ public class MyTest {
     public void test02(){
         String config="beans.xml";
         ApplicationContext ac=new ClassPathXmlApplicationContext(config);
-        /*Someservice someService = (Someservice) ac.getBean("someService");
-        someService.doSome();*/
+        Someservice someService = (Someservice) ac.getBean("someService");
+        someService.doSome();
+
+        /*验证 读取配置文件时候就创建了对象 无参数构造方法执行了*/
 
 
     }
