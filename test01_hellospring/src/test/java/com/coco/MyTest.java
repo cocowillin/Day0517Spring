@@ -3,6 +3,8 @@ package com.coco;
 import com.coco.service.Someservice;
 import com.coco.service.impl.SomeserviceImpl;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @author cocoLin
@@ -17,6 +19,11 @@ public class MyTest {
     }
     @Test
     public void test02(){
+        String config="beans.xml";
+        ApplicationContext ac=new ClassPathXmlApplicationContext(config);
+        Someservice someService = (Someservice) ac.getBean("someService");
+        someService.doSome();
+
 
     }
 }
