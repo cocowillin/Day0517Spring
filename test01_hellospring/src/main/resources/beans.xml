@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+    告诉spring 创建对象
+    id 自定义名称 唯一性
+    class 类的全限定名称 不能是接口-->
+    <bean id="someService" class="com.coco.service.impl.SomeserviceImpl"></bean>
+</beans>
+
