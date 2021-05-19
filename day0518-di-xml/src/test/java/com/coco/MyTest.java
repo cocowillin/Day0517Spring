@@ -21,6 +21,8 @@ public class MyTest {
         ApplicationContext ac = new ClassPathXmlApplicationContext(config);
         Student myStudent = (Student) ac.getBean("myStudent");
         System.out.println(myStudent);
+        Date myDate= (Date) ac.getBean("myDate");
+        System.out.println(myDate);
 
     }
 

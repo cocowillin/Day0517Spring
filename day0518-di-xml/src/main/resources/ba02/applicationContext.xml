@@ -5,6 +5,8 @@
         <bean id="myStudent" class="com.coco.ba01.Student">
                 <property name="name" value="威廉姆斯williams"></property>
                 <property name="age" value="23"> </property>
+                <property name="school" value=""></property>
+
         </bean><!--设值注入 调用的set方法-->
         <bean id="myDate" class="java.util.Date">
                 <property name="month" value="12"></property>
