@@ -12,19 +12,26 @@
 
 
         <!--2222222构造注入-->
-        <bean id="myStudent" class="com.coco.ba02.Student">
+        <bean id="myStudent" class="com.coco.ba04.Student" autowire="byType">
+                <property name="name" value="威廉姆斯williams"></property>
+                <property name="age" value="23"> </property>
+                <!--<property name="school" ref="school"></property>-->
+
+
                 <!--<constructor-arg name="name" value="小灰灰"></constructor-arg>
                 <constructor-arg name="age" value="111"></constructor-arg>
                 <constructor-arg name="school" ref="school"></constructor-arg>-->
-                <constructor-arg index="0" value="小明明"></constructor-arg>
+                <!--<constructor-arg index="0" value="小明明"></constructor-arg>
                 <constructor-arg index="2" ref="school"></constructor-arg>
-                <constructor-arg index="1" value="19"></constructor-arg>
+                <constructor-arg index="1" value="19"></constructor-arg>-->
          </bean>
-        <bean id="school"  class="com.coco.ba02.School">
+        <!--<bean id="school11111111"  class="com.coco.ba04.School">
                 <property name="name" value="中关村小学"></property>
-                <property name="address" value="田家堡"></property>
+                <property name="address" value="田家堡南路小西街"></property>
+        </bean>-->
+        <bean id="primaryschool" class="com.coco.ba04.HighSchool">
+                <property name="name" value="中关村一小"></property>
+                <property name="address" value="田家堡南路小西街"></property>
         </bean>
-        <bean id="myDate" class="java.util.Date">
-                <property name="month" value="12"></property>
-        </bean>
+
 </beans>

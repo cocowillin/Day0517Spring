@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+        <bean id="primaryschool" class="com.coco.ba04.HighSchool">
+                <property name="name" value="中关村三小一中"></property>
+                <property name="address" value="田家堡南路小西街"></property>
+        </bean>
+
+</beans>

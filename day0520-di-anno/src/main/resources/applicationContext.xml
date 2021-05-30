@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+         https://www.springframework.org/schema/context/spring-context.xsd">
+        <!--声明组件扫描器-->
+        <context:component-scan base-package="com.coco"></context:component-scan>
+        <context:property-placeholder location="classpath:test.properties"></context:property-placeholder>
+        <bean id="my" class="com.coco.ba01.School">
+                <property name="name" value="中关村小学校"></property>
+                <property name="address" value="大兴区111" ></property>
+         </bean>
+</beans>
