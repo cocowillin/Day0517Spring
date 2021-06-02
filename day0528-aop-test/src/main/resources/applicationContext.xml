@@ -10,7 +10,5 @@
         <bean id="someService" class="com.coco.ba01.service.impl.SomeServiceImpl"></bean>
         <!--声明切面类对象-->
         <bean id="myAspect" class="com.coco.ba01.aspect.MyAspect"></bean>
-        <aop:aspectj-autoproxy>
-
-        </aop:aspectj-autoproxy>
+        <aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>
 </beans>
